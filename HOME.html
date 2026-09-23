@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGIL WEBSITE</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h2 class="logo">GILS</h2>
+            <button onclick="toggleMenu()">☰</button>
+            <nav id="menu">
+                <a href="HOME.html">Home</a>
+                <a href="ARTIKEL.html">Artikel</a>
+                <a href="CONTACT.html">Contact</a>
+                <a href="ABOUT.html">About Me</a>
+            </nav>
+        </div>
+    </header>
+<!-- Section Home -->
+    <section id="home" class="bg">
+        <div class="container">
+            <div class="container-text">
+                <h1 class="con-title">Denasany Agil Feriski</h1>
+                <p class="con-tagline">Web Developer</p>
+                <p class="con-desc">CSS, HTML, JAVASCRIPT, PHP, LARAVEL</p>
+                <a href="#overview" class="btn">Lihat Overview</a>
+            </div>
+            <div class="container-img">
+                <img src="img/foto1.jpg" alt="Denasany Agil Feriski">
+            </div>
+        </div>
+    </section>
+<!-- Section Overview -->
+    <section id="overview" class="OVW">
+        <h2>Overview</h2>
+        <p class="summary">
+            Saya adalah seorang web developer yang berfokus pada pembuatan situs web yang responsif dan user-friendly.
+        </p>
+        <div class="ovw-container">
+                <div class="skill">
+                    <h3>Skill</h3>
+                    <ul>
+                        <li>Semantic HTML5</li>
+                        <li>Struktur Dokumen Web</li>
+                        <li>Form & Validasi Input</li>
+                        <li>Aksesibilitas (SEO Dasar)</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>Pengalaman</h3>
+                    <ul>
+                        <li>PT. XYZ</li>
+                        <li>Responsive Design</li>
+                        <li>Animation & Transition</li>
+                        <li>Preprocessors (SASS/SCSS)</li>
+                    </ul>
+                </div>
+        </div>
+    </section>
+<!-- Section Footer -->
+    <footer>
+        <p>&copy; 2026 Agil Feriski. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

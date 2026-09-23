@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h2 class="logo">GILS</h2>
+            <button onclick="toggleMenu()">☰</button>
+            <nav id="menu">
+                <a href="HOME.html">Home</a>
+                <a href="ARTIKEL.html">Artikel</a>
+                <a href="CONTACT.html">Contact</a>
+                <a href="ABOUT.html">About Me</a>
+            </nav>
+        </div>
+    </header>
+
+    <footer>
+        <p>&copy; 2026 Agil Feriski. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

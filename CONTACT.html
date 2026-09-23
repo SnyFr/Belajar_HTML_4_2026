@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h2 class="logo">GILS</h2>
+            <button onclick="toggleMenu()">☰</button>
+            <nav id="menu">
+                <a href="HOME.html">Home</a>
+                <a href="ARTIKEL.html">Artikel</a>
+                <a href="CONTACT.html">Contact</a>
+                <a href="ABOUT.html">About Me</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="contact">
+        <div class="containerform">
+            <h2>Get Connect With Me</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" placeholder="  Enter Your Name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="  Enter Your Email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" placeholder="  Enter Your Message" name="message" rows="5"
+                        required></textarea>
+                </div>
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Agil Feriski. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

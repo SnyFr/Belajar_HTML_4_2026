@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="home.css">
+
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h2 class="logo">GILS</h2>
+            <button onclick="toggleMenu()">☰</button>
+            <nav id="menu">
+                <a href="HOME.html">Home</a>
+                <a href="ARTIKEL.html">Artikel</a>
+                <a href="CONTACT.html">Contact</a>
+                <a href="ABOUT.html">About Me</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+    <div class="about-container">
+        <h2>About Me</h2>
+        
+        <p class="about-text">
+            Saya adalah seorang web developer yang berfokus pada pembuatan situs web responsif, modern, dan ramah pengguna. Dengan latar belakang di bidang teknologi, saya senang mempelajari hal-hal baru dan mengimplementasikannya dalam proyek-proyek web interaktif.
+        </p>
+
+        
+        <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rBg0ZcwjVKQ?si=ds3IQzfqMFSmPhsP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Agil Feriski. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

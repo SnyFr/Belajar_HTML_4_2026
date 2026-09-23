@@ -12,7 +12,8 @@
     <header>
         <div class="nav-container">
             <h2 class="logo">SnyFr</h2>
-            <nav>
+            <button onclick="toggleMenu()">☰</button>
+            <nav id="menu">
                 <a href="#home">Home</a>
                 <a href="#ability">Ability</a>
                 <a href="#about">About</a>
@@ -38,7 +39,6 @@
         <div class="container">
             <h2>Keahlian Saya</h2>
             <div class="wraper">
-
                 <div class="ability">
                     <h3>HTML</h3>
                     <ul>
@@ -119,6 +119,13 @@
     <footer>
         <p>&copy; 2026 Hak Cipta Dilindungi</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>

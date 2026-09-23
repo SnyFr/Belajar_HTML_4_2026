@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body,
 html {
   margin: 0;
@@ -16,6 +19,7 @@ header {
   position: fixed;
   color: #ffffff;
   top: 0;
+  z-index: 1000;
 }
 
 nav > a {
@@ -35,7 +39,16 @@ nav > a:hover {
   justify-content: space-between;
   align-items: center;
   padding-left: 10px;
+  button {
+    display: none;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+  }
 }
+
 .contentHome {
   margin-top: 75px;
   background-color: #481e14b6;
@@ -52,7 +65,7 @@ nav > a:hover {
   }
 }
 .parallax {
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -61,6 +74,7 @@ nav > a:hover {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  padding: 80px 20px 40px 20px;
 }
 .bg-1 {
   background-image: url("https://images3.alphacoders.com/133/thumb-1920-1338701.png");
@@ -85,8 +99,8 @@ nav > a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
     .ability {
       border: 2px solid #b8892d;
       border-radius: 16px;
@@ -104,7 +118,7 @@ nav > a:hover {
   background-color: #481e14b6;
   backdrop-filter: blur(8px);
   border-radius: 20px;
-  max-width: 1100px;
+  max-width: 700px;
   width: 80%;
   height: auto;
   margin-top: 20px;
@@ -122,7 +136,7 @@ nav > a:hover {
     gap: 20px;
     justify-items: center;
     figure {
-      padding: 10px 10px 60px 10px;
+      padding: 10px 10px 40px 10px;
       border-radius: 8px;
     }
 
@@ -142,6 +156,45 @@ nav > a:hover {
 @media (max-width: 768px) {
   .gallery {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  figure {
+    padding: 10px;
+    font-size: 10px;
+  }
+  figure > img {
+    width: 100%;
+    border-radius: 8px;
+    transition: 0.5s;
+    height: 86px;
+  }
+  .ability{
+    width: 100%;
+    font-size: 14px;
+  }
+  /* .content {
+    height: 75%;
+  } */
+  .nav-container > button {
+    display: block;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 25px;
+  }
+  nav {
+    display: none;
+    width: auto;
+    padding: 10px 0px;
+    right: 25px;
+    top: 47.5px;
+    flex-direction: column;
+    position: absolute;
+    background-color: #481e146c;
+  }
+  .active {
+    display: flex;
   }
 }
 .containerform {
@@ -202,3 +255,5 @@ footer {
   /* margin-top: 40px; */
   /* border-top: 1px solid black; */
 }
+
+
