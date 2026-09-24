@@ -1,0 +1,15 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    padding-top: 50px;
+}
+.parallax {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://images3.alphacoders.com/133/thumb-1920-1338701.png);
+}
